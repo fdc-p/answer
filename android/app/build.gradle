@@ -28,10 +28,10 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 android {
     signingConfigs {
         release {
-            storeFile file('/Users/zhangminchao/Documents/Google Play/upload-keystore.jks')
-            storePassword '8Paws.com'
-            keyAlias 'upload'
-            keyPassword '8Paws.com'
+            storeFile file('/Users/qian/cleaner2022/clean2022/xcleaner.keystore')
+            storePassword 'xcleaner007'
+            keyAlias 'xcleaner'
+            keyPassword 'xcleaner007'
         }
     }
     compileSdkVersion flutter.compileSdkVersion
