@@ -38,7 +38,7 @@
 
 ### 下载
 #### Google Play
-<a href="https://play.google.com/store/apps/details?id=com.bapaws.answer">
+<a href="https://play.google.com/store/apps/details?id=com.tiptop.ai.chat.gpt">
 	<img src="img/google-play-badge.png" alt="" height=80>
 </a>
 

@@ -13,7 +13,7 @@ class AppTranslation extends Translations {
   static const Map<String, String> zh_CN = {
     'app_name': '小答',
     'slogan': '探索答案像聊天一样简单',
-    'app_id': 'com.bapaws.answer',
+    'app_id': 'com.tiptop.ai.chat.gpt',
     'typing_a_message': '输入您的疑问',
     'conversations': '会话',
     'new_chat': '新聊天',
@@ -54,7 +54,7 @@ class AppTranslation extends Translations {
   static const Map<String, String> en_US = {
     'app_name': 'AI Chat',
     'slogan': 'Your versatile AI assistant',
-    'app_id': 'com.bapaws.answer',
+    'app_id': 'com.tiptop.ai.chat.gpt',
     'typing_a_message': 'Ask a question',
     'conversations': 'Conversations',
     'new_chat': 'New Chat',

@@ -8,7 +8,7 @@
 PRODUCT_NAME = Answer;
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.bapaws.answer;
+PRODUCT_BUNDLE_IDENTIFIER = com.tiptop.ai.chat.gpt;
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2023 com.bapaws. All rights reserved.
