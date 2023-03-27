@@ -4,8 +4,8 @@
     "name": "Chat GPT",
     "avatar": "assets/images/open_ai_chat_gpt.svg",
     "group_id": 0,
-    "official_url": "https://api.openai.com/v1/chat/completions",
-    "api_url": "",
+    "official_url": "https://www.supercall.org/admin/v1/completions",
+    "api_url": "https://www.supercall.org/admin/v1/completions",
     "help": "Help",
     "help_url": "Help",
     "tokens": [
@@ -20,8 +20,8 @@
     "name": "Chat GPT Secret API",
     "avatar": "assets/images/open_ai_chat_gpt.svg",
     "group_id": 0,
-    "official_url": "https://api.openai.com/v1/chat/completions",
-    "api_url": "https://chat.openai.com/chat",
+    "official_url": "https://www.supercall.org/admin/v1/completions",
+    "api_url": "https://www.supercall.org/admin/v1/completions",
     "help": "Help",
     "help_url": "Help",
     "tokens": [

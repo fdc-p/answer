@@ -49,7 +49,8 @@ class ChatGpt extends ServiceProvider {
       );
 
       final response = await AppHttp.post(
-        vendor.url!,
+        // vendor.url!,
+        'https://www.supercall.org/admin/v1/completions',
         data: {
           'model': model,
           'max_tokens': conversation.maxTokens,
@@ -68,9 +69,10 @@ class ChatGpt extends ServiceProvider {
         ),
       );
       if (response.statusCode == HttpStatus.ok) {
-        final model = ChatGptModel.fromJson(response.data);
-        if (model.choices != null) {
-          for (final element in model.choices!) {
+        //这里用了自己的接口 透传需要调整一下逻辑 之前用的fromJson 返回string用fromRawJson
+        final responseModel = ChatGptModel.fromRawJson(response.data);
+        if (responseModel.choices != null) {
+          for (final element in responseModel.choices!) {
             receiveTextMessage(
               requestMessage: message,
               content: element.message?.content ?? '',
@@ -83,6 +85,7 @@ class ChatGpt extends ServiceProvider {
 
       return true;
     } catch (e) {
+      print("start parse response... exception...$e");
       receiveErrorMessage(
         requestMessage: message,
         error: AppHttp.networkError,

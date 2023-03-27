@@ -39,6 +39,28 @@ class ChatGptModel {
 
   String toRawJson() => json.encode(toJson());
 
+  /**
+   * {
+   * "id":"chatcmpl-6yWPyC1CJMUFrRm1vQlFWoGit9U7F",
+   * "object":"chat.completion",
+   * "created":1679882314,
+   * "model":"gpt-3.5-turbo-0301",
+   * "usage":{
+   *  "prompt_tokens":20,
+   *  "completion_tokens":140,
+   *  "total_tokens":160
+   *  },
+   *  "choices":[
+   *    {"message":{
+   *      "role":"assistant",
+   *      "content":"折射现象是由于光的传播速度在不同介质中不同而产生的。当光从一种介质进入另一种介质时，由于两种介质的密度不同。"
+   *      },
+   *    "finish_reason":"stop",
+   *    "index":0
+   *    }
+   *  ]
+   *}
+   * **/
   factory ChatGptModel.fromJson(Map<String, dynamic> json) => ChatGptModel(
         id: json["id"],
         object: json["object"],
