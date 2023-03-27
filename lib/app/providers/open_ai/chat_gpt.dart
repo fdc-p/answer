@@ -50,7 +50,7 @@ class ChatGpt extends ServiceProvider {
 
       final response = await AppHttp.post(
         // vendor.url!,
-        'https://www.supercall.org/admin/v1/completions',
+        'http://ai.superwisdom.org/chat/v1',
         data: {
           'model': model,
           'max_tokens': conversation.maxTokens,
