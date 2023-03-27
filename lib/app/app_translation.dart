@@ -5,7 +5,8 @@ import 'package:get/get.dart';
 class AppTranslation extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
-        'zh_CN': zh_CN,
+    //屏蔽中文翻译
+        // 'zh_CN': zh_CN,
         'en_US': en_US,
       };
 
@@ -20,7 +21,7 @@ class AppTranslation extends Translations {
     'new_chat_deleted': '【@name】删除成功',
     'copied': '复制成功',
     'open_ai_hello':
-        '您好！我是 OpenAI，一家人工智能研究组织，致力于推动人工智能的发展和应用。在会话中，我会通过下面的账号与您对话：\n- [ChatAI](/service?service_id=open_ai_chat_gpt)\n- [ChatAI GPT-4](/service?service_id=open_ai_chat_gpt_4)\n\n我可以完成很多任务：\n- 文本生成\n- 问答\n- 对话\n- 翻译\n- ...\n\n能够与您进行交互，并准确地理解和回答问题。',
+        '您好！我是 OpenAI，一家人工智能研究组织，致力于推动人工智能的发展和应用。在会话中，我会通过下面的账号与您对话：\n我可以完成很多任务：\n- 文本生成\n- 问答\n- 对话\n- 翻译\n- ...\n\n能够与您进行交互，并准确地理解和回答问题。',
     'chat_gpt_help_url': 'https://www.bapaws.com/answer/help/chat_gpt.html',
     'type_your_tokens': '请输入您的 @name',
     'must_type_tokens': '请先点击我的头像，输入您的 @tokens',
@@ -51,8 +52,8 @@ class AppTranslation extends Translations {
   };
 
   static const Map<String, String> en_US = {
-    'app_name': 'Chat Answer',
-    'slogan': 'Get answer as easy as chatting',
+    'app_name': 'AI Chat',
+    'slogan': 'Your versatile AI assistant',
     'app_id': 'com.bapaws.answer',
     'typing_a_message': 'Ask a question',
     'conversations': 'Conversations',
@@ -61,7 +62,7 @@ class AppTranslation extends Translations {
     'new_chat_deleted': '"@name" deleted successfully',
     'copied': 'Copied successfully',
     'open_ai_hello':
-        'Hi, I\'m OpenAI, an artificial intelligence research organization dedicated to advancing the development and application of AI.  \nDuring the conversation, I will talk to you through the following account:\n- [ChatAI](/service?service_id=open_ai_chat_gpt)\n- [ChatAI GPT-4](/service?service_id=open_ai_chat_gpt_4)\n\n I can complete many tasks:\n - text generation\n- question\n- answer\n- dialogue\n- translation\n- ...\n\nBe able to interact with you and understand and answer questions as accurately as possible.',
+        'Hi, I\'m OpenAI, an artificial intelligence research organization dedicated to advancing the development and application of AI.  \n I can complete many tasks:\n - text generation\n- question\n- answer\n- dialogue\n- translation\n- ...\n\nBe able to interact with you and understand and answer questions as accurately as possible.',
     'chat_gpt_help':
         'You need to make a simple configuration for me before using it.\n1. click on my avatar, go to my home page;\n2. fill in your API Key.\n\nIf you haven\'t applied for an API Key, please click [Get Help](https://www.bapaws.com/answer/help/chat_gpt.html) on my home page to see how to apply.',
     'chat_gpt_help_url': 'https://www.bapaws.com/answer/help/chat_gpt.html',
