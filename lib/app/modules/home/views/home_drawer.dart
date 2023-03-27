@@ -145,23 +145,23 @@ class HomeDrawer extends GetView<HomeController> {
                     ),
               ),
             ),
-            IconButton(
-              padding: EdgeInsets.zero,
-              constraints: const BoxConstraints.tightFor(
-                width: 28,
-                height: 28,
-              ),
-              iconSize: 18,
-              onPressed: () {
-                controller.toConversation(
-                  conversation: conversation,
-                );
-              },
-              icon: Icon(
-                Icons.more_horiz,
-                color: isCurrent ? Colors.white : null,
-              ),
-            ),
+            // IconButton(
+            //   padding: EdgeInsets.zero,
+            //   constraints: const BoxConstraints.tightFor(
+            //     width: 28,
+            //     height: 28,
+            //   ),
+            //   iconSize: 18,
+            //   onPressed: () {
+            //     controller.toConversation(
+            //       conversation: conversation,
+            //     );
+            //   },
+            //   icon: Icon(
+            //     Icons.more_horiz,
+            //     color: isCurrent ? Colors.white : null,
+            //   ),
+            // ),
           ],
         ),
       ),
