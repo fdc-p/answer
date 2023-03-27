@@ -22,7 +22,7 @@ class HomeDrawer extends GetView<HomeController> {
               content: Row(
                 children: [
                   const ChatAvatar(
-                    path: 'assets/images/logo-white.png',
+                    path: 'assets/images/logo-green.png',
                     radius: Radius.circular(8),
                     width: 54,
                     height: 54,
